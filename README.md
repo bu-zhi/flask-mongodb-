@@ -5,3 +5,4 @@ test1为爬虫代码，会把数据下载到本地的mongodb的dazuoye数据库�
 要运行请把命令行的工作目录切换到test1里面，然后输入scrapy crawl tsms
 
 test3 为展示页面
+html页面里的背景图可能失效，可以换成自己的
