@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Ttle</title>
+  <style type="text/css">
+  img{
+  width: 100%;
+  height: auto;
+  }
+  </style>
+</head>
+<body>
+<center><b style="color:red;">耗费{{time}}秒</b></center>
+{% for wendan in users %}
+<div>
+  <center>
+    number：{{wendan.number}}&emsp;&emsp; 标题：{{ wendan.title}}&emsp;&emsp;作者：{{ wendan.author }}&emsp;&emsp;
+    <a href="{{wendan.download}}">下载</a>
+  </center>
+
+  <img src="data:;base64,{{ wendan.content | safe }}" style="vertical-align:middle">
+
+</div>
+
+{% endfor %}
+</body>
+</html>

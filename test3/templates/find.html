@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片搜索</title>
+<style type="text/css">
+body{
+background-position: center top;
+background-size: cover;
+background-image:url(https://api.impco.cn/pc.php)
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2f3640;
+    border-radius: 50px;
+    height: 40px;
+    padding: 10px;/*四边填充10 */
+ }
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: #fff;
+}
+.search-btn {
+    color:#fb3f51 ;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#2f3640 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+.search-txt{
+    border: none;/*文本框边框 */
+    background: none;
+    outline: none;/*文本框四周轮廓*/
+    float: left;
+    padding: 0%;
+    color: #fff;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;/*行高，行间距*/
+    width: 0px;
+}
+</style>
+</head>
+<body>
+<center>
+    <font size="7" color="red">搜索功能</font>
+</center>
+<center>
+	<form method="post" enctype=multipart/form-data>
+        <div class="search-box">
+        <input class="search-txt" type="text" name="wd" placeholder="Type to search">
+			<input type="submit" value="GO" class="search-btn">
+
+    </div>
+	</form>
+</center>
+</body>
+</html>
